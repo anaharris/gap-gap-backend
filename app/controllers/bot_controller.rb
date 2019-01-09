@@ -1,2 +1,0 @@
-class BotController < ApplicationController
-end
