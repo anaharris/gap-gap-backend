@@ -1,0 +1,2 @@
+class BotConversationController < ApplicationController
+end

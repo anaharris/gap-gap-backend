@@ -1,0 +1,2 @@
+class UserConversationController < ApplicationController
+end
