@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
-  resources :users
-    post '/login', to: 'auth#create'
-    get '/profile', to: 'users#profile'
-  resources :bots
-  resources :conversations
-  resources :messages
+  resources :users, :bots, :conversations, :messages
+
+  post '/login', to: 'auth#create'
+  get '/profile', to: 'users#profile'
+
+  # ActionCable
   mount ActionCable.server => '/cable'
 
 end
