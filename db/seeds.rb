@@ -13,7 +13,7 @@ Message.destroy_all
 
 ana = User.create(name: 'ana', username: 'banana', password: '123', avatar: 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png')
 mike = User.create(name: 'mike', username: 'mikekim', password: '123', avatar: 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png')
-robin = User.create(name: 'robim', username: 'rtram', password: '123', avatar: 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png')
+robin = User.create(name: 'robin', username: 'rtram', password: '123', avatar: 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png')
 anna = User.create(name: 'anna', username: 'connaway', password: '123', avatar: 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png')
 
 conv1 = Conversation.create(topic: 'chat1')
