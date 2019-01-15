@@ -41,6 +41,7 @@ ActiveRecord::Schema.define(version: 2019_01_09_225745) do
     t.string "content"
     t.integer "conversation_id"
     t.integer "user_id"
+    t.string "user_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

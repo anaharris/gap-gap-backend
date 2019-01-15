@@ -9,12 +9,15 @@ class MessagesChannel < ApplicationCable::Channel
   end
 
   def receive(payload)
+    puts 'received message'
+    puts payload.inspect
     message = Message.create(
       conversation_id: payload['conversation_id'],
-      content: payload['message'],
-      user_id: current_user.id)
+      content: payload['content'],
+      user_id: current_user.id,
+      user_name: current_user.name)
     if message.valid?
-      ActionCable.server.broadcast('messages', message)
+      ActionCable.server.broadcast("convo-1:messages", message)
     else
       puts "EVENT=error; #{message.errors.full_messages}"
     end

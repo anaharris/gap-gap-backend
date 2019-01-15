@@ -8,12 +8,13 @@ class MessagesController < ApplicationController
   end
 
   def create
+    Message.create(message_params)
   end
 
   private
 
   def message_params
-    params.require(:message).permit(:content, :conversation_id)
+    params.require(:message).permit(:user_id, :content, :conversation_id, :user_name)
   end
 
 end
