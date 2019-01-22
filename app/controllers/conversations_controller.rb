@@ -1,5 +1,5 @@
 class ConversationsController < ApplicationController
-  # skip_before_action :authorized, only [:index, :show, :create]
+  # skip_before_action :authorized, only: [:index, :show, :create]
 
   def index
     render json: Conversation.all
@@ -10,7 +10,12 @@ class ConversationsController < ApplicationController
   end
 
   def create
-    Conversation.create(conversation_params)
+    conversation = Conversation.create(conversation_params)
+    if conversation.valid?
+      render json: {conversation: conversation}, status: :accepted
+    else
+      render json: {message: 'post unsuccessful'}, status: :unprocessable_entity
+    end
   end
 
   private

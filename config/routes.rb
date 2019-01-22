@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  resources :users, :bots, :conversations, :messages
+  resources :users
+  resources :bots
+  resources :conversations
+  resources :messages
+  resources :user_conversations
 
   post '/login', to: 'auth#create'
   get '/profile', to: 'users#profile'
