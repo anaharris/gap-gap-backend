@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :conversations
   resources :messages
   resources :user_conversations
+  resources :bot_conversations
 
   post '/login', to: 'auth#create'
   get '/profile', to: 'users#profile'
