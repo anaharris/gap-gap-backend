@@ -17,7 +17,9 @@ class MessagesChannel < ApplicationCable::Channel
       conversation_id: payload['conversation_id'],
       content: payload['content'],
       user_id: current_user.id,
-      user_name: current_user.name)
+      user_name: current_user.name,
+      avatar: current_user.avatar
+    )
       if message.valid?
         ActionCable.server.broadcast(CHANNEL_NAME, message)
       else
@@ -35,7 +37,8 @@ class MessagesChannel < ApplicationCable::Channel
           conversation_id: payload['conversation_id'],
           content: bot.response,
           bot_id: bot.id,
-          user_name: bot.name
+          user_name: bot.name,
+          avatar: bot.avatar
         )
         if bot_message.valid?
           ActionCable.server.broadcast(CHANNEL_NAME, bot_message)

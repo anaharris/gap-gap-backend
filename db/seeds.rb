@@ -11,10 +11,10 @@ Conversation.destroy_all
 UserConversation.destroy_all
 Message.destroy_all
 
-ana = User.create(name: 'ana', username: 'banana', password: '123', avatar: 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png')
-mike = User.create(name: 'mike', username: 'mikekim', password: '123', avatar: 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png')
-robin = User.create(name: 'robin', username: 'rtram', password: '123', avatar: 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png')
-anna = User.create(name: 'anna', username: 'connaway', password: '123', avatar: 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png')
+ana = User.create(name: 'Ana', username: 'banana', password: '123', avatar: 'https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/30127074_10212089003521917_2385979076673574288_n.jpg?_nc_cat=100&_nc_ht=scontent-iad3-1.xx&oh=9a1fbc9f17e850fa437ed6986f78391e&oe=5CC05884')
+mike = User.create(name: 'Mike', username: 'mikekim', password: '123', avatar: 'https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/11261936_10204828684067980_8230718568035380872_n.jpg?_nc_cat=109&_nc_ht=scontent-iad3-1.xx&oh=fd1fab0a89e60e3b322e23b0806894a9&oe=5CCC2D1D')
+robin = User.create(name: 'Robin', username: 'rtram', password: '123', avatar: 'https://media.licdn.com/dms/image/C5103AQEwJ__cO1769g/profile-displayphoto-shrink_800_800/0?e=1553731200&v=beta&t=sAlU7Pb75TUIvwQmqrVctYrjfRSYW0ylJm1pUfQlm1U')
+anna = User.create(name: 'Anna', username: 'connaway', password: '123', avatar: 'https://media.licdn.com/dms/image/C5103AQEwJ__cO1769g/profile-displayphoto-shrink_800_800/0?e=1553731200&v=beta&t=sAlU7Pb75TUIvwQmqrVctYrjfRSYW0ylJm1pUfQlm1U')
 
 mom_bot = Bot.create(name: "mom's number", trigger: 'emergency', response: "Mom's phone number is 202-798-0031.", avatar: 'https://static.thenounproject.com/png/1444467-200.png')
 elevator_boy = Bot.create(name: 'elevator boy', trigger: 'elevator', response: 'The elevator code is 3751', avatar: 'https://static.thenounproject.com/png/1689493-200.png')
