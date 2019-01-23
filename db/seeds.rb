@@ -16,6 +16,9 @@ mike = User.create(name: 'mike', username: 'mikekim', password: '123', avatar: '
 robin = User.create(name: 'robin', username: 'rtram', password: '123', avatar: 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png')
 anna = User.create(name: 'anna', username: 'connaway', password: '123', avatar: 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png')
 
+mom_bot = Bot.create(name: "mom's number", trigger: 'emergency', response: "Mom's phone number is 202-798-0031.", avatar: 'https://static.thenounproject.com/png/1444467-200.png')
+elevator_boy = Bot.create(name: 'elevator boy', trigger: 'elevator', response: 'The elevator code is 3751', avatar: 'https://static.thenounproject.com/png/1689493-200.png')
+
 conv1 = Conversation.create(topic: 'chat1')
 conv2 = Conversation.create(topic: 'chat2')
 conv3 = Conversation.create(topic: 'chat3')
