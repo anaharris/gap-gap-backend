@@ -78,11 +78,11 @@ test:
 #
 # You can use this database configuration with:
 #
-#   production:
-#     url: <%= ENV['DATABASE_URL'] %>
-#
 production:
-  <<: *default
-  database: chat-app-backend_production
-  username: chat-app-backend
-  password: <%= ENV['CHAT-APP-BACKEND_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
+#
+# production:
+#   <<: *default
+#   database: chat-app-backend_production
+#   username: chat-app-backend
+#   password: <%= ENV['CHAT-APP-BACKEND_DATABASE_PASSWORD'] %>
