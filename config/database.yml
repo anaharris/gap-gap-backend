@@ -81,7 +81,7 @@ test:
 production:
   url: <%= ENV['DATABASE_URL'] %>
 #
-# production:
+# producti on:
 #   <<: *default
 #   database: chat-app-backend_production
 #   username: chat-app-backend

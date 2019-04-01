@@ -1,4 +1,3 @@
-require 'byebug'
 class MessagesChannel < ApplicationCable::Channel
   CHANNEL_NAME = 'messages'
 
