@@ -4,7 +4,6 @@ class MessagesChannel < ApplicationCable::Channel
   def subscribed
     puts "EVENT=subscribed; subscribed to #{CHANNEL_NAME}"
     stream_from CHANNEL_NAME
-
   end
 
   def receive(payload)
