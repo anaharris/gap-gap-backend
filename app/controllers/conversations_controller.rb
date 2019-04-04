@@ -2,7 +2,7 @@ class ConversationsController < ApplicationController
   # skip_before_action :authorized, only: [:index, :show, :create]
 
   def index
-    render json: Conversation.all
+    render json: Conversation.all.includes(:users, :messages, :bots)
   end
 
   def show

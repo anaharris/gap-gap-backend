@@ -7,8 +7,6 @@ class MessagesChannel < ApplicationCable::Channel
   end
 
   def receive(payload)
-    puts 'received message'
-    puts payload.inspect
     # if it's a message handle it like a messages
     # if it's a "status update" like "so-and-so is typing" broadcast that message
     message = Message.create(
